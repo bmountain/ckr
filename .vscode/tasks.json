@@ -10,7 +10,7 @@
                 "${file}",
                 "-O0",
                 "-o",
-                "${workspaceFolder}/${fileBasenameNoExtension}"
+                "${workspaceFolder}/a.out"
             ],
             "options": {
                 "cwd": "${fileDirname}"
@@ -18,14 +18,5 @@
             "group": "build",
             "problemMatcher": "$gcc"
         },
-        {
-            "label": "focus editor",
-            "type": "shell",
-            "command": "workbench.action.focusActiveEditorGroup",
-            "presentation": {
-                "reveal": "never",
-                "panel": "dedicated"
-            }
-        }
     ]
 }
