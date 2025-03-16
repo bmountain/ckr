@@ -1,0 +1,22 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "cpp debug build",
+            "type": "cppbuild",
+            "command": "gcc",
+            "args": [
+                "-g",
+                "${file}",
+                "-O0",
+                "-o",
+                "${cwd}/a.out"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "group": "build",
+            "problemMatcher": "$gcc"
+        },
+    ]
+}
